@@ -1,0 +1,394 @@
+:root{
+    --cor-0:#FFFFFF;
+    --cor-1: #F2F2F2;
+    --cor-2: #626262;
+    --cor-p1: #FF7900;
+}
+
+.cor-0{
+    color: #FFFFFF;
+}
+
+.cor-1{
+    color: #F2F2F2;
+}
+
+.cor-2{
+    color: #626262;
+}
+
+.cor-p1{
+    color: #FF7900;
+}
+
+body{
+    font-family: 'Open Sans';
+    color: var(--cor-2);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, a {
+    margin: 0;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+.botao{
+    color: var(--cor-0);
+    background-color: var(--cor-p1);
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+}
+
+.botao-branco{
+    color: var(--cor-p1);
+    background-color: var(--cor-0);
+    display: inline-block;
+}
+
+
+/* MENU PRINCIPAL */
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.menu-item li{
+    list-style: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.menu-item a{
+    color: var(--cor-2);
+}
+
+.menu-item a:hover{
+    color: var(--cor-p1);
+    transition: .5s;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+.principal-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.principal h1{
+    font-size: 5.5rem;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+
+.principal-texto>p{
+    margin-bottom: 28px;
+    width: 40ch;
+}
+
+.principal-texto>a{
+    margin-bottom: 28px;
+}
+
+/* SERVIÇOS */
+
+.servicos-bg{
+    background-color: var(--cor-p1);
+    z-index: 1;
+}
+
+.servicos{
+    padding: 50px 0;
+}
+
+.servicos-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    position: relative;
+    z-index: 99999;
+}
+
+.servicos-item div:nth-child(4)::before{
+    content: '';
+    width: 140px;
+    height: 120px;
+    background-image: url("./img/gato2.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 140px 120px;
+    position: absolute;
+    z-index: -2;
+    top: -30px;
+    right: 10px;
+}
+
+.servicos-item h2{
+    grid-column: 1 / span 3;
+    color: var(--cor-0);
+    font-size: 2rem;
+    font-weight: 400;
+    width: 15ch;
+    line-height: 1;
+}
+
+.servicos-desc{
+    background-color: var(--cor-0);
+    padding: 20px;
+    border-radius: 14px;
+    z-index: auto;
+}
+
+.servicos-item h3{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#orientacao::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("./img/gato.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 36px 36px;
+    position: absolute;
+    right: 0px;
+}
+
+#vacina::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("./img/vacina.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 36px 36px;
+    position: absolute;
+    right: 0px;
+}
+
+#avaliacao::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("./img/avaliacao.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 36px 36px;
+    position: absolute;
+    right: 0px;
+}
+
+#microchipagem::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("./img/microchip.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 36px 36px;
+    position: absolute;
+    right: 0px;
+}
+
+#cirurgia::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("./img/cirurgia.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 36px 36px;
+    position: absolute;
+    right: 0px;
+}
+
+#internacao::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("./img/hospital.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 36px 36px;
+    position: absolute;
+    right: 0px;
+}
+
+
+.depoimento-bg{
+    background-color: var(--cor-1);
+    z-index: -2;
+    position: relative;
+}
+
+.depoimento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+    gap: 24px;
+}
+
+.depoimento h2{
+    grid-column: 1 / span 3;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.depoimento-item{
+    background-color: var(--cor-0);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.depoimento-item p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.depoimento-item address{
+    text-align: right;
+    font-size: .8rem;
+}
+
+.depoimento-imagem{
+    width: 80px;
+    height: 80px;
+    margin: -40px auto 16px auto;
+}
+
+.depoimento-imagem img{
+    border-radius: 150px;
+}
+
+.blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+    gap: 24px;
+}
+
+.blog h2{
+    grid-column: 1 / span 3;
+    color: var(--cor-p1);
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 400;
+    position: relative;
+    z-index: auto;
+}
+
+
+.blog-imagem img{
+    border-radius: 14px 14px 0 0;
+    cursor: pointer;
+}
+
+.blog-texto{
+    background-color: var(--cor-1);
+    padding: 20px;
+    margin-top: -5px;
+    border-radius: 0 0 14px 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.blog-texto:hover{
+    background-color: var(--cor-p1);
+    color: var(--cor-0);
+    transition: .3s;
+}
+
+.blog h2::before{
+    content: '';
+    width: 340px;
+    height: 360px;
+    background-image: url("./img/gato3.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 340px 360px;
+    position: absolute;
+    top: -130px;
+    right: 10px;
+    z-index: -1;
+}
+
+.footer-bg{
+    background-color: var(--cor-p1);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+    align-items: center
+}
+
+.footer-info h1{
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--cor-0);
+    text-align: right;
+}
+
+.footer-info p{
+    color: var(--cor-0);
+    text-align: right;
+}
+
+.footer-info{
+    display: grid;
+    gap: 36px;
+    justify-items: end
+}
+
+.footer-imagem{
+    width: 750px;
+    margin-left: -180px;
+    overflow: hidden;
+}
+
+.footer-redes{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-redes img{
+    width: 46px;
+}
