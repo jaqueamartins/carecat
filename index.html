@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Care Cat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="menu container">
-            <span>CARE CAT</span>
+            <a href="./index.html"><img class="logo" src="./img/care cat logo.svg" alt="Logo Care Cat"></a>
+            <a href="./index.html"><img class="logo-branco" src="./img/care cat logo branco.svg" alt="Logo Care Cat"></a>
             <ul class="menu-item">
                 <a href=""><li>Agendar</li></a>
                 <a href=""><li>Serviços</li></a>
@@ -21,7 +26,7 @@
     <main>
         <div class="principal container">
             <div class="principal-item">
-                <div class="principal-texto">
+                <div class="principal-texto animate__animated animate__fadeInDown">
                     <h1>Cuide do seu <span class="cor-p1">felino</span></h1>
                     <p>Sabemos que <b>cada caso é um caso</b>, por isso, contamos com uma equipe de especialistas para cuidar de forma única o seu bichano.</p>
                     <a class="botao" href="">Agende uma consulta!</a>
@@ -37,27 +42,33 @@
             <div class="servicos-item">
                 <h2>Conheça os nossos <b>serviços</b></h2>
                 <div class="servicos-desc">
-                    <h3 id="orientacao">Orientação <br>Comportamental</h3>
+                    <h3 id="orientacao">Orientação Comportamental</h3>
+                    <img src="./img/gato.svg" class="icones" alt="Ícone Orientação Comportamental">
                     <p>é realizada com os gatos e suas respectivas famílias e propõe a melhoria das relações e do bem-estar de todos os envolvidos</p>
                 </div>
                 <div class="servicos-desc">
                     <h3 id="vacina">Vacinas</h3>
+                    <img src="./img/vacina.svg" class="icones" alt="Ícone Vacinas">
                     <p>A vacina para gato vale para todos os bichanos, independente dele ter acesso ou não à rua. Muitas doenças podem ser carregadas para dentro das residências por diversas maneiras.</p>
                 </div>
                 <div class="servicos-desc">
                     <h3 id="avaliacao">Avaliação Preventiva</h3>
+                    <img src="./img/avaliacao.svg" class="icones" alt="Ícone Avaliação Preventiva">
                     <p>Com ela, conseguíramos detectar doenças precocemente, poupando nossos gatos de grande sofrimento e melhorando sua expectativa de vida grandiosamente.</p>
                 </div>
                 <div class="servicos-desc">
                     <h3 id="microchipagem">Microchipagem</h3>
+                    <img src="./img/microchip.svg" class="icones" alt="Ícone Microchipagem">
                     <p>O microchip para gatos é uma forma popular e moderna de identificar e até localizar seu o animal de estimação de um modo eficaz e seguro.</p>
                 </div>
                 <div class="servicos-desc">
                     <h3 id="cirurgia">Cirurgia</h3>
+                    <img src="./img/cirurgia.svg" class="icones" alt="Ícone Cirurgia">
                     <p>Caso o seu gato precise de cirurgia, pode contar com a gente! Damos todas as informações do que você pode fazer em casa para ajudar o seu gato a recuperar de uma forma mais tranquila</p>
                 </div>
                 <div class="servicos-desc">
                     <h3 id="internacao">Internação</h3>
+                    <img src="./img/hospital.svg" class="icones" alt="Ícone Internação">
                     <p>Durante o período de internação, uma equipe especializada fica responsável pela monitoração constante desses pacientes, que além de prover os cuidados básicos de medicação, ajuste de fluidoterapia, higiene e alimentação</p>
                 </div>
             </div>
@@ -104,15 +115,15 @@
     <section class="blog-bg">
         <div class="blog container">
             <h2>Nosso <b>blog</b></h2>
-            <div>
+            <div class="blog-item">
                 <div class="blog-imagem"><img src="./img/post1.jpg" alt=""></div>
                 <div class="blog-texto">O que você precisa saber antes de adotar um filhote</div>
             </div>
-            <div>
+            <div class="blog-item">
                 <div class="blog-imagem"><img src="./img/post2.jpg" alt=""></div>
                 <div class="blog-texto">Cuidando da saúde do seu pet - Saúde preventiva</div>
             </div>
-            <div>
+            <div class="blog-item">
                 <div class="blog-imagem"><img src="./img/post3.jpg" alt=""></div>
                 <div class="blog-texto">Como introduzir um novo gato pra família?</div>
             </div>
